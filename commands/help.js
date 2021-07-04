@@ -4,6 +4,6 @@ const messages = [
 ]
 
 module.exports = async function (msg, args){
-    const index = Math.floor(Math.random() * json.results.length);
-    msg.channel.send(message[index])
+    const index = Math.floor(Math.random() * messages.length);
+    msg.channel.send(messages[index])
 }
