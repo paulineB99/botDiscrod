@@ -9,7 +9,7 @@ const commandsmess = {gif, help}
 
 module.exports = async function (msg) {
     for (const emoji of emojis){
-        if (msg.content.toLowerCase().includes(emoji)){
+        if (msg.content.toLowerCase().includes(emoji) && !msg.content.toLowerCase().includes(":"+emoji+":")){
             reaction(msg, emoji);
         }
     }
