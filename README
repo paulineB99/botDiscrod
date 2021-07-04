@@ -1,0 +1,5 @@
+Lancer le bot : 
+node index.js
+
+Arreter le bot :
+ctr+C
